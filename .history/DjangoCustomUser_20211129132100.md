@@ -64,8 +64,8 @@ class PersonSerializer(ModelSerializer):
 ## Changing the view:
 * if the view only get the data: ListAPIView
 * if it get and create: ListCreateAPIView
-* for the update: RetrieveUpdateAPIView
-* for all: RetrieveUpdateDestroyAPIView
+* for the update: RetriveUpdateAPIView
+* 
    
 
 

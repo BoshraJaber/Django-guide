@@ -62,10 +62,7 @@ class PersonSerializer(ModelSerializer):
 10. Create superuser and register it in the settings 
 
 ## Changing the view:
-* if the view only get the data: ListAPIView
-* if it get and create: ListCreateAPIView
-* for the update: RetrieveUpdateAPIView
-* for all: RetrieveUpdateDestroyAPIView
+
    
 
 
