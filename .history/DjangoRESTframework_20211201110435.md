@@ -56,18 +56,4 @@ class PostSerializer(serializers.ModelSerializer):
 * For testing the requests in another folder:in terminal -> `poetry shell` -> `poetry add requests` -> `python` -> `import requests` -> `r=requests.get('http://127.0.0.1:8000/api/v1/posts')` -> `r.status_code` =200 -> `r.json()` = my data
 
 ## Docker:
-* we use it instead on the environment, It is like a container.
-* It is responsible of containers, each container has everything you need like the requirement, the python version, the frameworks and libraries, we install them all in a docker file
-
-### setting up docker:
-* exit the environment
-* create a file `Dockerfile` with no extension on the same level as manage.py, it should be named so.
-* Run docker on your machine
-* We are not going to change anything in the project, just run it on docker
-* Copy a code to the Dockerfile 
-* Create another file called : `docker-compose.yml`, copy another code to it
-* inside the code there is a command to run the server
-* running the code : `docker-compose up` it will give an error
-* `poetry export -f requirements.txt -o requirements.txt` export everything in poetry to a file called requirements.txt and create it if it doesn't exists
-* `docker-compose up` it will shows an error because we didn't add docker to the settings.py
-* in settings.py -> `Allowed_HOSTS = [0.0.0.0]`
+* we use it instead on the environment 

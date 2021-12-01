@@ -69,5 +69,4 @@ class PostSerializer(serializers.ModelSerializer):
 * inside the code there is a command to run the server
 * running the code : `docker-compose up` it will give an error
 * `poetry export -f requirements.txt -o requirements.txt` export everything in poetry to a file called requirements.txt and create it if it doesn't exists
-* `docker-compose up` it will shows an error because we didn't add docker to the settings.py
-* in settings.py -> `Allowed_HOSTS = [0.0.0.0]`
+* `docker-compose up`
